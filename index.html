@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BananaStack builds smart IT solutions across application development, IT consulting, AI media, automation, networks, and modern web operations."
+    />
+    <title>BananaStack | Smart IT Solutions for Tomorrow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <canvas id="networkCanvas" aria-hidden="true"></canvas>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" data-elevated="false">
+      <a class="brand" href="#top" aria-label="BananaStack home">
+        <span class="brand-mark">BS</span>
+        <span class="brand-copy">
+          <strong>BananaStack</strong>
+          <small>Smart IT Studio</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#lab">StackLab</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="commandButton" type="button" aria-label="Open command palette" data-tooltip="Search">
+          <span aria-hidden="true">⌘</span>
+        </button>
+        <button class="icon-button" id="themeButton" type="button" aria-label="Toggle color theme" data-tooltip="Theme">
+          <span aria-hidden="true">◐</span>
+        </button>
+        <button class="menu-button" id="menuButton" type="button" aria-label="Open menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-panel" id="mobilePanel" aria-hidden="true">
+      <a href="#services">Services</a>
+      <a href="#lab">StackLab</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <main id="top">
+      <section class="hero">
+        <picture class="hero-media">
+          <img src="assets/images/bananastack-hero.png" alt="Futuristic digital engineering workspace" />
+        </picture>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow reveal">Application development • AI media • Automation • Networks</p>
+          <h1 class="reveal">BananaStack</h1>
+          <p class="hero-lede reveal">
+            We design and ship intelligent digital systems for companies that need fast websites, secure infrastructure,
+            useful automation, and software that can actually scale.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button primary magnetic" href="#contact">Start a project</a>
+            <a class="button secondary magnetic" href="#lab">Explore capabilities</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="BananaStack capabilities">
+        <div class="ticker-track">
+          <span>Web apps</span><span>Mobile apps</span><span>Cloud consulting</span><span>AI ads</span>
+          <span>Workflow automation</span><span>Network setup</span><span>Website management</span>
+          <span>Web apps</span><span>Mobile apps</span><span>Cloud consulting</span><span>AI ads</span>
+          <span>Workflow automation</span><span>Network setup</span><span>Website management</span>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What we build</p>
+          <h2>One team for the full digital stack.</h2>
+          <p>
+            Adapted from AIQ's service model, BananaStack brings application engineering, infrastructure, AI media,
+            automation, networks, and web management into one coherent delivery system.
+          </p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal" data-tilt>
+            <span class="service-icon">⌁</span>
+            <h3>Application Development</h3>
+            <p>Web, desktop, and mobile applications with clean architecture, fast interfaces, and maintainable code.</p>
+          </article>
+          <article class="service-card reveal" data-tilt>
+            <span class="service-icon">▣</span>
+            <h3>IT Infra Consulting</h3>
+            <p>Cloud, server, and system planning that lowers risk while preparing your stack for growth.</p>
+          </article>
+          <article class="service-card reveal" data-tilt>
+            <span class="service-icon">✦</span>
+            <h3>AI Ads & Media</h3>
+            <p>AI-assisted creatives, campaigns, and media workflows built for sharper targeting and faster iteration.</p>
+          </article>
+          <article class="service-card reveal" data-tilt>
+            <span class="service-icon">↻</span>
+            <h3>Automation</h3>
+            <p>Business workflows that remove repetitive work, connect tools, and keep teams moving without friction.</p>
+          </article>
+          <article class="service-card reveal" data-tilt>
+            <span class="service-icon">⌘</span>
+            <h3>Network Setup</h3>
+            <p>Secure connectivity, office networks, deployment planning, and operational support for growing teams.</p>
+          </article>
+          <article class="service-card reveal" data-tilt>
+            <span class="service-icon">◈</span>
+            <h3>Web Development & Management</h3>
+            <p>High-performance websites, hosting support, content updates, monitoring, and continuous improvement.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section lab" id="lab">
+        <div class="section-heading reveal">
+          <p class="eyebrow">StackLab</p>
+          <h2>Configure a delivery pod in seconds.</h2>
+          <p>Pick the priorities that matter most and see how BananaStack shapes the engagement.</p>
+        </div>
+        <div class="lab-shell reveal">
+          <div class="lab-controls" role="tablist" aria-label="Delivery priorities">
+            <button class="lab-tab active" type="button" data-mode="launch">Launch</button>
+            <button class="lab-tab" type="button" data-mode="scale">Scale</button>
+            <button class="lab-tab" type="button" data-mode="automate">Automate</button>
+            <button class="lab-tab" type="button" data-mode="secure">Secure</button>
+          </div>
+          <div class="lab-output">
+            <div class="radar" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div>
+              <p class="lab-kicker" id="labKicker">Launch Pod</p>
+              <h3 id="labTitle">From idea to production-ready product.</h3>
+              <p id="labBody">
+                UX planning, frontend build, backend APIs, deployment, and post-launch tuning for a crisp first release.
+              </p>
+              <ul id="labList">
+                <li>Clickable prototype and user flow</li>
+                <li>Production web app or website</li>
+                <li>Hosting, analytics, and handoff</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section estimator" aria-label="Project estimator">
+        <div class="estimator-copy reveal">
+          <p class="eyebrow">Project pulse</p>
+          <h2>Estimate the effort before the first call.</h2>
+          <p>
+            A lightweight planning tool for matching scope, speed, and support. It is not a quote, but it makes the
+            first conversation much sharper.
+          </p>
+        </div>
+        <form class="estimator-panel reveal">
+          <label>
+            Project size
+            <input id="sizeRange" type="range" min="1" max="5" value="3" />
+          </label>
+          <label>
+            Automation depth
+            <input id="autoRange" type="range" min="1" max="5" value="2" />
+          </label>
+          <label>
+            Infrastructure complexity
+            <input id="infraRange" type="range" min="1" max="5" value="3" />
+          </label>
+          <div class="estimate-result" aria-live="polite">
+            <span>Recommended sprint plan</span>
+            <strong id="estimateWeeks">6-8 weeks</strong>
+            <p id="estimateText">Balanced build with app delivery, deployment setup, and automation planning.</p>
+          </div>
+        </form>
+      </section>
+
+      <section class="section process" id="process">
+        <div class="section-heading reveal">
+          <p class="eyebrow">How we work</p>
+          <h2>Clear stages, no mystery box.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span>01</span>
+            <h3>Map</h3>
+            <p>We audit your current tools, define outcomes, and turn vague ideas into a usable technical plan.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>02</span>
+            <h3>Build</h3>
+            <p>Design, engineering, automation, and infrastructure work move in short loops with visible progress.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>03</span>
+            <h3>Launch</h3>
+            <p>We deploy, monitor, tune performance, and make sure your team knows exactly how to operate the system.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>04</span>
+            <h3>Improve</h3>
+            <p>After launch, we keep refining the stack with analytics, support, upgrades, and new automation ideas.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Let's talk</p>
+          <h2>Bring BananaStack into your next build.</h2>
+          <p>
+            Tell us what you want to launch, fix, automate, or scale. We will respond with a practical path and the
+            right delivery pod.
+          </p>
+          <div class="contact-meta">
+            <a href="mailto:hello@bananastack.com">hello@bananastack.com</a>
+            <a href="https://theaiq.net" target="_blank" rel="noreferrer">Source inspiration: theaiq.net</a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <label>
+            Name
+            <input required name="name" autocomplete="name" />
+          </label>
+          <label>
+            Email
+            <input required type="email" name="email" autocomplete="email" />
+          </label>
+          <label>
+            What should we build?
+            <textarea required name="message" rows="5"></textarea>
+          </label>
+          <button class="button primary magnetic" type="submit">Send message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>BananaStack</span>
+      <p>Smart solutions for tomorrow.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <div class="command-palette" id="commandPalette" aria-hidden="true">
+      <div class="command-box" role="dialog" aria-modal="true" aria-label="Command palette">
+        <input id="commandInput" type="search" placeholder="Jump to services, StackLab, process, contact..." />
+        <div class="command-list" id="commandList"></div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Message staged. Connect this form to your backend next.</div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
