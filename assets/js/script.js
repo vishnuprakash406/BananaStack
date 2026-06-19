@@ -43,7 +43,6 @@ const commands = [
   { label: "Open StackLab", detail: "Interactive pod selector", target: "#lab" },
   { label: "See process", detail: "Delivery stages", target: "#process" },
   { label: "Contact BananaStack", detail: "Start a project", target: "#contact" },
-  { label: "Visit AIQ source site", detail: "theaiq.net", target: "https://theaiq.net" },
 ];
 
 function setScrollState() {
